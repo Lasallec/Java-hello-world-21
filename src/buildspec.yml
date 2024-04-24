@@ -9,8 +9,8 @@ phases:
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
       - echo "Installing JDK 17..."
-      - wget -O jdk.tar.gz "https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_linux-x64_bin.tar.gz"
-      - mkdir -p /usr/lib/jvm/jdk-17
+      - wget -O jdk.tar.gz "https://download.oracle.com/graalvm/22/latest/graalvm-jdk-22_linux-x64_bin.tar.gz"
+      - mkdir -p /usr/lib/jvm/jdk-21
   build:
     commands:
       - java -version
