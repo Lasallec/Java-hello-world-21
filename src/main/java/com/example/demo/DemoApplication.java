@@ -9,7 +9,7 @@ public class DemoApplication {
 
 	@GetMapping("/")
 	public String index() {
-		return "what up bacon 222!";
+		return "what up baconcheeseburger!";
 	}
 	public ResponseEntity<String> healthCheck() {
 		return ResponseEntity.ok().build();
